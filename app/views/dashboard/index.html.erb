@@ -1,0 +1,89 @@
+<div ng-app="myApp" style="border:0px;margin:0px;padding:0px;">
+
+<div class="kiwi">
+	<p>KiWi<br></p>
+	<a id="top"><%= link_to "LOGOUT",destroy_user_session_path, method: :delete, data: { confirm: 'Are you sure?' } %></a>
+	<a id="top">About Us</a>
+	<a id="top">Help</a>
+	<a id="selected_user"></a>
+
+	<!-- <a href="#" id="top">Profile</a> -->
+</div>
+
+<div class="lrec">
+</div>
+
+<div class="profilepic">
+</div>
+
+<div class="profile-details">
+	<p id="email"><%= current_user[:email] %></p>
+	<p id="pname"><%= current_user[:name] %></p>
+</div>
+
+<div class="contacts" ng-controller="setup">
+	<!-- <div class="container">
+		<div class="contacts-pic"></div>
+		<div class="name">name here</div>
+	</div>
+	<div class="container">
+		<div class="contacts-pic"></div>
+		<div class="name">name here</div>
+	</div>
+	<div class="container">
+		<div class="contacts-pic"></div>
+		<div class="name">name here</div>
+	</div>
+	<div class="container">
+		<div class="contacts-pic"></div>
+		<div class="name">name here</div>
+	</div>
+	<div class="container">
+		<div class="contacts-pic"></div>
+		<div class="name">name here</div>
+	</div>
+	<div class="container">
+		<div class="contacts-pic"></div>
+		<div class="name">name here</div>
+	</div> -->
+</div>
+
+
+<div ng-controller="user" style="border:0px;margin:0px;padding:0px;">
+
+	<div >
+	<input type="text" id ="name" name="chat-box" class="chat-box" ng-model="body" placeholder="type here ...">
+	<button style="cursor: pointer;"class="enter" ng-click="sendMsg()"></button>
+	</div>
+
+
+	<!-- <span style="color:white;" id="selected_user"></span> -->
+	<div class="chat-space"> 
+		<!-- <div class="received-text">
+			<p>lorem ipsun blabla bla bla black sheep. lorem ipsun blabla bla bla black sheep</p>
+		</div>
+		
+		<div class="sender-text">
+			<p>lorem ipsun blabla bla bla black sheep. lorem ipsun blabla bla bla black sheep</p>
+		</div>
+		<div class="received-text">
+			<p>lorem ipsun blabla bla bla black sheep. lorem ipsun blabla bla bla black sheep</p>
+		</div>
+		
+		<div class="sender-text">
+			<p>lorem ipsun blabla bla bla black sheep. lorem ipsun blabla bla bla black sheep</p>
+		</div>
+		<div class="received-text">
+			<p>lorem ipsun blabla bla bla black sheep. lorem ipsun blabla bla bla black sheep</p>
+		</div>
+		
+		<div class="sender-text">
+			<p>lorem ipsun blabla bla bla black sheep. lorem ipsun blabla bla bla black sheep</p>
+		</div> -->
+			
+	</div>
+
+<!-- <div class="footer-class"><p>&copy; Copyright 2019 KiWi.inc</p></div> -->
+
+</div>
+</div>

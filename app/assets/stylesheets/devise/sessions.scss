@@ -1,0 +1,179 @@
+@import 'bootstrap';
+
+
+
+body
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-image: image-url("ls4.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.footer-class
+{
+	position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+} 
+
+.kiwi p
+{
+	letter-spacing: 5px;
+	color: white;
+	font-size: 50px;
+	/*font-family: 'Viga', sans-serif;*/
+	font-family: sans-serif;
+	padding-top: 23px;
+	padding-left:90px;
+	margin: 0px 0px 0px 0px;
+	height: 38px;
+	width:100px;
+	display:inline-block;
+}
+.kiwi a
+{
+	font-size: 20px;
+	margin: 0px 0px 0px 0px;
+	padding-top: 48px;
+	padding-right: 90px;
+	float: right;
+	color:white;
+	display: inline-block;
+	font-family: sans-serif;
+	letter-spacing: 5px;
+	text-decoration: none;
+}
+
+
+
+a,
+input,
+button {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+
+/* Container */
+.container {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  justify-content:center;
+  align-items:center;
+}
+
+/* Background */
+.bg {
+  position: fixed;
+  z-index: -1;
+  background: black;
+  width: inherit;
+  height: inherit;
+  top: 0;
+}
+
+.bg img {
+  width: inherit;
+  height: inherit;
+  opacity: 0.6;
+  object-fit: cover;
+}
+
+
+/* Sign in form */
+.sign-in-form {
+	background-color: rgba(245, 245, 245, 0.1);
+	width: 350px;
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+	color: #FFFFFF;
+}
+
+h3 {
+	text-align: center;
+	padding: 20px 0px 20px 0px;
+	font-weight: normal;
+	font-family: sans-serif;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 20px;
+}
+
+
+input, button {
+	padding: 15px 20px;
+	margin-bottom: 20px;
+  	border-radius: 3px;	
+  	font-size: 1rem; 
+  	font-family: sans-serif; 
+}
+
+input::-webkit-input-placeholder{
+	font-size: 1rem;
+  color: #333;
+}
+
+input {
+	background-color: rgba(245, 245, 245, 0.5);
+	border: none;
+}
+
+input:focus {
+  background-color: rgba(245, 245, 245, 0.9);
+  border: none;
+  outline: none;
+  color: #333;
+}
+
+button {
+	letter-spacing: 2px;
+	font-size: 17px;
+	background:none;
+	border: 1px solid #69F0AE;
+  	color: #69F0AE; 
+}
+
+button:hover {
+	background-color: #364F43;
+    color: #69F0AE ;
+    border-color: #364F43;
+}
+
+form span {
+	letter-spacing: 1px;
+	text-align: center;
+  	font-size: 15px;
+  	font-family: sans-serif;
+}
+
+a#resetpw {
+	letter-spacing: 2px;
+	font-size: 16px;
+	font-family: sans-serif;
+	text-decoration: none;
+	color: #e5e3e3;
+}
+
+a#resetpw:hover {
+  color: #F44336;
+}
+
+a#top:hover
+{
+	color:#adf4b9;
+}
+
+input[type=email], input[type=password]{
+
+	font-size: 20px;
+}
